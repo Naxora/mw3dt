@@ -1,23 +1,23 @@
 [
     {
         "Protocol": "UDP",
-        "Port": "27014",
-        "Name": "",
-        "Description": "Port used for main game traffic",
-        "Ref": ""
+        "Port": 27014,
+        "Ref": "OpenGamePort",
+        "Name": "Open Game Port",
+        "Description": "Port for Steam visible server game traffic"
     },
     {
         "Protocol": "UDP",
-        "Port": "27015",
-        "Name": "",
-        "Description": "Port used for main game traffic",
-        "Ref": ""
+        "Port": 27015,
+        "Ref": "SecureGamePort",
+        "Name": "Secure Game Port",
+        "Description": "Port for secure game traffic"
     },
     {
         "Protocol": "UDP",
-        "Port": "27016",
-        "Name": "",
-        "Description": "Port used for main game traffic",
-        "Ref": ""
+        "Port": 27016,
+        "Ref": "MasterServerPort",
+        "Name": "Master Server Port",
+        "Description": "Port for Steam master server or browser traffic"
     }
 ]
