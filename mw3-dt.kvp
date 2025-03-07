@@ -13,7 +13,7 @@ Meta.EndpointURIFormat=steam://connect/{ip}:0
 Meta.AppConfigId=c918163b-83f0-4c14-baf0-3887577fbf0b
 App.AdminMethod=STDIO
 App.HasReadableConsole=True
-App.HasWritableConsole=True
+App.HasWriteableConsole=True
 App.DisplayName=MW3-DT
 
 App.CommandLineArgs={{$PlatformArgs}} -no_integrity -enable_rcon -enable_b3 +set dedicated 2 +set net_ip 127.0.0.1 +set net_port {{$OpenGamePort}} +set net_masterServerPort {{$MasterServerPort}} +set net_queryPort {{$SecureGamePort}} +set net_authPort 8766 +set sv_config Server.cfg +start_map_rotate
