@@ -72,13 +72,15 @@ Meta.OS=2
 Meta.ConfigManifest=mw3-dtconfig.json
 Meta.MetaConfigManifest=mw3-dtmetaconfig.json
 Meta.ConfigRoot=mw3-dt.kvp
-App.RootDir=./mw3-dt/
 Meta.DisplayImageSource=url:
+
+App.RootDir=./mw3-dt/
 App.BaseDirectory=./mw3-dt/serverfiles/
+App.ExecutableWin=serverfiles\mw3_start_server.exe
 App.WorkingDir=serverfiles
-App.ExecutableWin=serverfiles\iw5mp_server.exe
+App.LinuxCommandLineArgs=-a wine "./mw3_start_server.exe"
+
 App.ExecutableLinux=/usr/bin/wine
-App.LinuxCommandLineArgs=-a wine "./iw5mp_server.exe"
 App.Ports=@IncludeJson[mw3-dtports.json]
 App.UpdateSources=@IncludeJson[mw3-dtupdates.json]
 App.EnvironmentVariables={"LD_LIBRARY_PATH": "{{$FullBaseDir}}linux64:{{$FullRootDir}}linux64:%LD_LIBRARY_PATH%", "WINEPREFIX": "{{$FullRootDir}}.wine", "WINEARCH": "win64", "WINEDEBUG": "-all"}
