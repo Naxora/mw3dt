@@ -15,7 +15,9 @@ App.AdminMethod=STDIO
 App.HasReadableConsole=true
 App.HasWritableConsole=true
 App.DisplayName=MW3-DT
-App.CommandLineArgs={{$PlatformArgs}} +set sv_config "server.cfg" +set net_queryPort {{$OpenGamePort}} +set net_port {{$SecureGamePort}} +set net_authPort {{$AuthPort}} +set net_masterServerPort {{$MasterServerPort}} +start_map_rotate {{$FormattedArgs}}
+
+App.CommandLineArgs={{$PlatformArgs}} -no_integrity -enable_rcon -enable_b3 +set dedicated 2 +set net_ip 127.0.0.1 +set net_port {{$OpenGamePort}} +set net_masterServerPort {{$MasterServerPort}} +set net_queryPort {{$SecureGamePort}} +set net_authPort 8766 +set sv_config Server.cfg +start_map_rotate
+
 App.WindowsCommandLineArgs=
 App.CommandLineParameterFormat=+set -{0} "{1}"
 App.CommandLineParameterDelimiter= 

@@ -1,7 +1,7 @@
 [
     {
         "Protocol": "UDP",
-        "Port": 27014,
+        "Port": 27016,
         "Ref": "OpenGamePort",
         "Name": "Open Game Port",
         "Description": "Port for Steam visible server game traffic"
@@ -15,7 +15,7 @@
     },
     {
         "Protocol": "UDP",
-        "Port": 27016,
+        "Port": 27017,
         "Ref": "MasterServerPort",
         "Name": "Master Server Port",
         "Description": "Port for Steam master server or browser traffic"
